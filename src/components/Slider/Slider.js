@@ -1,6 +1,13 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Keyboard, Navigation, Pagination } from 'swiper';
+import {
+  Autoplay,
+  EffectFade,
+  Keyboard,
+  Navigation,
+  Pagination,
+  Zoom,
+} from 'swiper';
 import Slide from './Slide/Slide';
 
 // Import Swiper styles
@@ -9,6 +16,7 @@ import './slider.css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
+import 'swiper/css/zoom';
 
 const Slider = () => {
   const slide2 = 'https://i.ibb.co/qmBZVbN/2.jpg';
@@ -35,7 +43,8 @@ const Slider = () => {
           delay: 4000,
           disableOnInteraction: false,
         }}
-        modules={[Navigation, Pagination, EffectFade, Keyboard, Autoplay]}
+        zoom={true}
+        modules={[Navigation, Pagination, EffectFade, Keyboard, Autoplay, Zoom]}
         className='mySwiper'>
         <SwiperSlide>
           <Slide url={slide1} />
