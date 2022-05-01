@@ -20,7 +20,7 @@ const Slider = () => {
       <Swiper
         style={{
           '--swiper-navigation-color': '#aaa',
-          '--swiper-pagination-color': '#fff',
+          '--swiper-pagination-color': '#00febe',
         }}
         navigation={true}
         loop={true}
