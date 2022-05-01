@@ -1,5 +1,3 @@
-.slider-text {
-}
 .slogan {
   color: #eee;
   font-size: 4rem;
@@ -11,4 +9,14 @@
   font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .slogan {
+    font-size: 3rem;
+  }
+  .address {
+    font-size: 1rem;
+    margin-bottom: 10rem;
+  }
 }

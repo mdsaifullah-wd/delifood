@@ -7,7 +7,7 @@ const Slide = ({ url }) => {
     <div className='slide-image'>
       <img src={url} alt='' />
       <div className='overlay'>
-        <div className='slider-text'>
+        <div className='slider-text container'>
           <h1 className='slogan'>আমরাই বুঝি আপনার রুচি</h1>
           <div className='address'>
             <p>হেয়াকো পূর্ব বাজার, কবির চৌধুরী কমপ্লেক্স, ২য় তলা</p>
