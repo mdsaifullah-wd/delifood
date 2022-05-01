@@ -1,20 +1,14 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {
-  Autoplay,
-  EffectCoverflow,
-  Keyboard,
-  Navigation,
-  Pagination,
-} from 'swiper';
+import { Autoplay, EffectFade, Keyboard, Navigation, Pagination } from 'swiper';
+import Slide from './Slide/Slide';
 
 // Import Swiper styles
 import 'swiper/css';
 import './slider.css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
-import Slide from './Slide/Slide';
+import 'swiper/css/effect-fade';
 
 const Slider = () => {
   const slide2 = 'https://i.ibb.co/qmBZVbN/2.jpg';
@@ -33,22 +27,15 @@ const Slider = () => {
         pagination={{
           clickable: true,
         }}
-        effect={'coverflow'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
+        effect={'fade'}
         keyboard={{
           enabled: true,
         }}
         autoplay={{
-          delay: 3000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
-        modules={[Navigation, Pagination, EffectCoverflow, Keyboard, Autoplay]}
+        modules={[Navigation, Pagination, EffectFade, Keyboard, Autoplay]}
         className='mySwiper'>
         <SwiperSlide>
           <Slide url={slide1} />

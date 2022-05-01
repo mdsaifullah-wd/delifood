@@ -1,20 +1,6 @@
 #app {
   height: 100%;
 }
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
 
 .swiper {
   width: 100vw;
@@ -51,6 +37,9 @@ body {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .swiper-slide img {
   display: block;
